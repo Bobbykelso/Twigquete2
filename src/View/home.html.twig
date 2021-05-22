@@ -4,6 +4,7 @@
     {{ parent() }} - Accueil
 {% endblock %}
 {% block content %}
-
+    {% for item in navbar %}
+        {% include 'item/_navbar.html.twig' %}
     {% endfor %}
 {% endblock %}
